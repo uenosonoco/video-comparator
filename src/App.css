@@ -1,0 +1,132 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  padding: 2px;
+}
+
+.videos-container {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: calc(100svh - 4px);
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: calc(50dvw - 3px);
+}
+
+.drop-zone:hover {
+  border-color: #999;
+}
+
+.video-player {
+  flex: 1;
+  min-width: 0;
+}
+
+video {
+  display: block;
+  max-height: 80vh;
+  min-width: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 2px;
+  padding: 10px;
+}
+
+.time-display {
+  color: #666;
+  font-size: 14px;
+  text-align: right;
+  width: 100%;
+}
+
+.seek-bar {
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button-group button {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  padding: 10px;
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+.button-group button:hover {
+  border-color: #999;
+}
+
+.button-group .fa-icon,
+.button-group svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button-group span,
+.button-group .fa-icon,
+.button-group svg {
+  line-height: 1;
+}
+
+.button-group .icon-label {
+  margin-left: 4px;
+}
+
+.bottom-container {
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  width: 100%;
+}
+
+.playback-rate-select {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  color: #333;
+  font-size: 16px;
+  height: 32px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  outline: none;
+  appearance: none;
+  text-align: center;
+}
+
+.playback-rate-select:hover,
+.playback-rate-select:focus {
+  border-color: #999;
+  background: #f8f8f8;
+}
